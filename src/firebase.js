@@ -1,0 +1,16 @@
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+firebase.initializeApp({
+    apiKey: "AIzaSyCYV4AWBwfTNNODOClgcUOIvHdKYqfjvO8",
+    authDomain: "few12final.firebaseapp.com",
+    projectId: "few12final",
+    storageBucket: "few12final.appspot.com",
+    messagingSenderId: "948190057179",
+    appId: "1:948190057179:web:2ed4d17b20aaee357e32fe",
+    measurementId: "G-61X9MXE5G7"
+});
+
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
