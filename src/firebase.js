@@ -2,6 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+import { useAuthState } from 'react-firebase-hooks/auth';
+
 firebase.initializeApp({
     apiKey: "AIzaSyCYV4AWBwfTNNODOClgcUOIvHdKYqfjvO8",
     authDomain: "few12final.firebaseapp.com",
@@ -19,3 +21,14 @@ export const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
 };
+
+export const addMessage = async (text, uid, photoURL) => {
+    const messagesRef = firestore.collection('messages')
+
+    await messagesRef.add({
+        text,
+        uid,
+        photoURL,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    })
+}
