@@ -4,7 +4,7 @@ import './styles/SignIn.css';
 
 function SignIn(props) {
     return (
-        <button onClick={signInWithGoogle}>Sign In With Google</button>
+        <button className="signin-button" onClick={signInWithGoogle}>Sign In With Google</button>
     );
 }
 

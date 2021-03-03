@@ -1,4 +1,4 @@
-.signin-button {
+.signOut {
     background-color: green;
     border: none;
     color: white;
@@ -8,9 +8,4 @@
     cursor: pointer;
     font-size: 1.25rem;
     border-radius: 30px;
-}
-
-.signin-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
 }

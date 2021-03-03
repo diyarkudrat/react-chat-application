@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ChatMessage.css';
 
 import { auth } from '../firebase';
 
