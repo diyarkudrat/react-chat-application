@@ -1,5 +1,6 @@
 import React from 'react';
 import { signInWithGoogle } from '../firebase';
+import './styles/SignIn.css';
 
 function SignIn(props) {
     return (

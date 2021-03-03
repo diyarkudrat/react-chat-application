@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { firestore, addMessage, auth } from '../firebase';
 import ChatMessage from './ChatMessage';
+import './styles/ChatRoom.css';
 
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
