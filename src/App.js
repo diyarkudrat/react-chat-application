@@ -17,9 +17,13 @@ function App() {
         <h1>Chat Application</h1>
         <h2>⚛️ 🔥 💬</h2>
 
-        { user[0] ? <ChatRoom /> : <SignIn /> }
         <SignOut />
       </header>
+      
+      <section>
+        { user[0] ? <ChatRoom /> : <SignIn /> }
+      </section>
+
     </div>
   );
 }
